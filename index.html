@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">Challenge Encriptador de Texto</h1>
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mí</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-section">
+                <textarea class="text" id="inputText" placeholder="Escribe tu texto aquí"></textarea>
+                <div class="buttons">
+                    <button onclick="encryptText()">Encriptar</button>
+                    <button onclick="decryptText()" class="botonDesencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="bottom-section">
+                    <button onclick="copyToClipboard()">Copiar</button>
+                </div>
+                <div class="output-content">
+                    <textarea class="text" id="outputText" readonly></textarea>
+                </div>
+                <img class="imagen2" src="img/cifrado.png" alt="Cifrado">
+            </div>
+
+        <script src="app.js"></script>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Santiago Cavazos</p>
+    </footer>
+</body>
+</html>
